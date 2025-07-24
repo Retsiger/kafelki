@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafelki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loginContainer" class="panel hidden">
+        <h2>Logowanie</h2>
+        <input type="password" id="password" placeholder="Hasło">
+        <button id="loginBtn">Zaloguj</button>
+    </div>
+
+    <div id="content">
+        <header>
+            <h1>Przydatne linki</h1>
+            <button id="loginOpenBtn">Zaloguj</button>
+            <button id="logoutBtn" class="hidden">Wyloguj</button>
+        </header>
+        <div id="tiles" class="tiles"></div>
+        <div id="addForm" class="hidden form">
+            <input type="text" id="newName" placeholder="Nazwa">
+            <input type="url" id="newUrl" placeholder="https://example.com">
+            <input type="color" id="newColor" value="#ffffff">
+            <button id="addTileBtn">Dodaj kafelek</button>
+            <button id="addCategoryBtn">Dodaj kategorię</button>
+            <button id="addRowBtn">Dodaj rząd</button>
+        </div>
+    </div>
+    <footer>Kafelki v2 by MARWDO</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
